@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PARE AI</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -11,9 +12,9 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
-  <body class="bg-gray-100">
+  <body>
     <!-- Navbar -->
-    <nav id="navbar" class="navbar fixed top-0 left-0 w-full z-10">
+    <nav id="navbar" class="navbar fixed top-0 left-0 w-full z-10 px-4">
       <div class="container mx-auto flex justify-between items-center p-4">
         <div class="company-name text-xl font-bold">PARE AI</div>
         <div class="hidden md:flex">
@@ -27,7 +28,7 @@
             href="#about"
             class="nav-menu nav-link hover:opacity-80"
             data-section="about"
-            >Tentang</a
+            >Tentang Kami</a
           >
           <a
             href="#subscribe"
@@ -66,7 +67,7 @@
           href="#about"
           class="mobile-nav-link block px-4 py-2"
           data-section="about"
-          >Tentang</a
+          >Tentang Kami</a
         >
         <a
           href="#subscribe"
@@ -80,7 +81,7 @@
     <!-- Updated Banner Section -->
     <header
       id="home"
-      class="gradient-bg h-screen flex items-center justify-center text-white"
+      class="gradient-bg h-screen flex items-center justify-center"
     >
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full">
@@ -92,20 +93,51 @@
               Selamat Datang Di PARE AI
             </h1>
             <p class="mt-6 text-lg md:text-xl text-gray-100">
-              PareAI adalah aplikasi cerdas yang dirancang untuk membantu petani
-              dalam mendeteksi penyakit tanaman padi secara otomatis
+              PARE AI adalah aplikasi cerdas yang dirancang untuk membantu
+              petani dalam mendeteksi penyakit tanaman padi secara otomatis
             </p>
             <div class="mt-8 flex flex-col sm:flex-row gap-4">
               <a
-                href="#subscribe"
-                class="inline-block bg-white text-green-600 px-8 py-4 btn-rounded hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 font-semibold text-center"
+                href="https://drive.google.com/drive/folders/1DfmnUKXM22Xy7fg2H36CSck1kQDuYH-3?usp=sharing"
+                target="_blank"
+                class="download-animation inline-flex items-center justify-center gap-2 card-bg text-green-600 px-8 py-4 btn-rounded hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 font-semibold text-center"
               >
-                Dapatkan Aplikasi
+                <!-- Download Icon -->
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7,10 12,15 17,10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Unduh Aplikasi
               </a>
               <a
                 href="#about"
-                class="inline-block border-2 border-white text-white px-8 py-4 btn-rounded hover:bg-white hover:text-green-600 transition-all duration-300 font-semibold text-center"
+                class="inline-flex items-center justify-center gap-2 border-2 border-bg text-white px-8 py-4 btn-rounded btn_learnmore hover:text-green-600 transition-all duration-300 font-semibold text-center"
               >
+                <!-- Learn More Icon -->
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
                 Pelajari Lebih Lanjut
               </a>
             </div>
@@ -125,8 +157,11 @@
 
     <!-- About Section -->
     <section id="about" class="py-20 container mx-auto text-center px-4">
-      <h2 class="text-3xl font-bold">About Us</h2>
+      <h2 class="text-3xl font-bold">Tentang Kami</h2>
       <p class="mt-4 text-gray-700">
+        Kami adalah perusahaan yang berdedikasi untuk memberikan layanan terbaik
+        kepada klien kami. Tim ahli kami bekerja tanpa lelah untuk memastikan
+        bahwa setiap proyek memenuhi standar kualitas dan keunggulan tertinggi.
         We are a company dedicated to providing the best services to our
         clients. Our team of experts works tirelessly to ensure that every
         project meets the highest standards of quality and excellence.
@@ -134,28 +169,32 @@
       <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="card-bg p-6 rounded-lg shadow-md">
           <h3 class="text-xl font-semibold" style="color: var(--green-dark)">
-            Our Mission
+            Visi Kami
           </h3>
           <p class="mt-2 text-gray-600">
-            To deliver exceptional value to our clients through innovative
-            solutions.
+            Mewujudkan pertanian padi yang cerdas, efisien, dan berkelanjutan
+            melalui pemanfaatan teknologi kecerdasan buatan untuk mendukung
+            produktivitas, kesehatan lingkungan, dan kesejahteraan petani.
           </p>
         </div>
         <div class="card-bg p-6 rounded-lg shadow-md">
           <h3 class="text-xl font-semibold" style="color: var(--green-dark)">
-            Our Vision
+            Misi Kami
           </h3>
           <p class="mt-2 text-gray-600">
-            To be the leading company in our industry, setting new standards.
+            Membantu petani mendeteksi penyakit padi secara akurat dengan
+            teknologi CNN dan ChatBot LLMs, serta menyediakan informasi yang
+            mudah diakses untuk mendukung pertanian berkelanjutan.
           </p>
         </div>
         <div class="card-bg p-6 rounded-lg shadow-md">
           <h3 class="text-xl font-semibold" style="color: var(--green-dark)">
-            Our Values
+            Nilai Kami
           </h3>
           <p class="mt-2 text-gray-600">
-            Integrity, innovation, and customer satisfaction drive everything we
-            do.
+            Memberikan kemudahan akses bagi petani, mendorong praktik yang ramah
+            lingkungan, membangun kolaborasi dengan berbagai pihak, dan
+            menghadirkan solusi berbasis data yang akurat dan terpercaya.
           </p>
         </div>
       </div>
@@ -164,21 +203,22 @@
     <!-- Subscription Section -->
     <section id="subscribe" class="py-20 container mx-auto px-4">
       <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold">Choose Your Plan</h2>
+        <h2 class="text-3xl font-bold">Pilih Paket Anda</h2>
         <p class="mt-4 text-gray-700">
-          Select the perfect plan that fits your needs
+          Pilih paket yang sesuai dengan kebutuhan Anda
         </p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Basic Plan -->
         <div
           class="card-bg p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
         >
-          <h3 class="text-2xl font-bold text-center">Basic Plan</h3>
+          <h3 class="text-2xl font-bold text-center">Free Plan</h3>
           <div class="text-center my-6">
-            <span class="text-4xl font-bold" style="color: var(--green-dark)"
-              >$29</span
+            <span class="text-4xl font-bold" style="color: var(--green-light)"
+              >Rp. 0</span
             >
-            <span class="text-gray-600">/month</span>
+            <span class="text-gray-600">/bulan</span>
           </div>
           <ul class="space-y-3">
             <li class="flex items-center">
@@ -193,7 +233,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Feature 1
+              Kuota Deteksi Penyakit Terbatas
             </li>
             <li class="flex items-center">
               <svg
@@ -207,7 +247,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Feature 2
+              Kuota Chat Bot Terbatas
             </li>
             <li class="flex items-center">
               <svg
@@ -221,17 +261,80 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Feature 3
+              Email Support
+            </li>
+            <!-- Red X Icons for limitations -->
+            <li class="flex items-center">
+              <svg
+                class="w-5 h-5 text-red-500 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="text-gray-500">Tidak Ada Akses Artikel</span>
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-5 h-5 text-red-500 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="text-gray-500"
+                >Tidak Ada Akses Laporan Kolektif</span
+              >
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-5 h-5 text-red-500 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="text-gray-500">Tidak Ada Pelatihan Online</span>
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-5 h-5 text-red-500 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="text-gray-500"
+                >Tidak Ada Dukungan Prioritas Teknis</span
+              >
             </li>
           </ul>
           <button
             class="btn_subscribe mt-8 w-full text-center text-white px-6 py-3 rounded-lg transition-colors bg-green-600 hover:bg-green-700"
-            seover="this.style.opacity='0.9'"
+            onmouseover="this.style.opacity='0.9'"
             onmouseout="this.style.opacity='1'"
           >
-            Subscribe Now
+            Langganan Sekarang
           </button>
         </div>
+
+        <!-- Premium Plan (Popular) -->
         <div
           class="card-bg p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow border-2 relative"
           style="border-color: var(--green-dark)"
@@ -240,15 +343,15 @@
             <span
               class="text-white px-4 py-1 rounded-full text-sm font-semibold"
               style="background: var(--green-dark)"
-              >Popular</span
+              >Paling Laris</span
             >
           </div>
-          <h3 class="text-2xl font-bold text-center">Premium Plan</h3>
+          <h3 class="text-2xl font-bold text-center">Starter Plan</h3>
           <div class="text-center my-6">
             <span class="text-4xl font-bold" style="color: var(--green-light)"
-              >$59</span
+              >Rp. 30.000</span
             >
-            <span class="text-gray-600">/month</span>
+            <span class="text-gray-600">/bulan</span>
           </div>
           <ul class="space-y-3">
             <li class="flex items-center">
@@ -263,7 +366,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              All Basic Features
+              Akses Penuh Deteksi Penyakit
             </li>
             <li class="flex items-center">
               <svg
@@ -277,7 +380,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Premium Feature A
+              Akses Penuh Artikel
             </li>
             <li class="flex items-center">
               <svg
@@ -291,7 +394,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Premium Feature B
+              Akses Penuh Chat Bot
             </li>
             <li class="flex items-center">
               <svg
@@ -305,42 +408,219 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              24/7 Priority Support
+              Dukungan Email
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-5 h-5 text-red-500 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="text-gray-500"
+                >Tidak Ada Akses Laporan Kolektif</span
+              >
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-5 h-5 text-red-500 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="text-gray-500">Tidak Ada Pelatihan Online</span>
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-5 h-5 text-red-500 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="text-gray-500"
+                >Tidak Ada Dukungan Prioritas Teknis</span
+              >
             </li>
           </ul>
           <button
             class="btn_subscribe mt-8 w-full text-center text-white px-6 py-3 rounded-lg transition-colors bg-green-600 hover:bg-green-700"
           >
-            Subscribe Now
+            Langganan Sekarang
+          </button>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div
+          class="card-bg p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+        >
+          <h3 class="text-2xl font-bold text-center">Pro Plan</h3>
+          <div class="text-center my-6">
+            <span class="text-4xl font-bold" style="color: var(--green-light)"
+              >Rp. 300.000</span
+            >
+            <span class="text-gray-600">/bulan</span>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <svg
+                class="w-5 h-5 text-green-500 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              Akses Penuh Deteksi Penyakit
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-5 h-5 text-green-500 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              Akses Penuh Artikel
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-5 h-5 text-green-500 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              Akses Penuh Chat Bot
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-5 h-5 text-green-500 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              Dukungan Email
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-5 h-5 text-green-500 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              Laporan Kolektif
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-5 h-5 text-green-500 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              Pelatihan Online
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-5 h-5 text-green-500 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              Prioritas Dukungan Teknis
+            </li>
+          </ul>
+          <button
+            class="btn_subscribe mt-8 w-full text-center text-white px-6 py-3 rounded-lg transition-colors bg-green-600 hover:bg-green-700"
+            onmouseover="this.style.opacity='0.9'"
+            onmouseout="this.style.opacity='1'"
+          >
+            Langganan Sekarang
           </button>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-10">
+    <footer class="py-10">
       <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <h4 class="font-bold">About</h4>
-          <p class="mt-2">Learn more about our company and our mission.</p>
+          <h4 class="font-bold">Tentang Kami</h4>
+          <p class="mt-2">
+            PARE AI adalah aplikasi cerdas yang dirancang untuk membantu petani
+            dalam mendeteksi penyakit tanaman padi secara otomatis.
+          </p>
         </div>
         <div>
-          <h4 class="font-bold">Services</h4>
+          <h4 class="font-bold">Layanan</h4>
           <ul class="mt-2">
-            <li><a href="#" class="hover:underline">Service 1</a></li>
-            <li><a href="#" class="hover:underline">Service 2</a></li>
+            <li><a href="#" class="hover:underline">Free Plan</a></li>
+            <li><a href="#" class="hover:underline">Starter Plan</a></li>
+            <li><a href="#" class="hover:underline">Pro Plan</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="font-bold">Contact</h4>
-          <p class="mt-2">Email: info@company.com</p>
-          <p>Phone: (123) 456-7890</p>
+          <h4 class="font-bold">Kontak</h4>
+          <p class="mt-2">Email: pareaiproject@gmail.com</p>
+          <p>Telepon: 085718793077</p>
         </div>
         <div>
-          <h4 class="font-bold">Follow Us</h4>
+          <h4 class="font-bold">Ikuti Kami</h4>
           <ul class="mt-2">
-            <li><a href="#" class="hover:underline">Facebook</a></li>
-            <li><a href="#" class="hover:underline">Twitter</a></li>
+            <li>
+              <a
+                href="https://www.youtube.com/@PareAI-Project"
+                target="_blank"
+                class="hover:underline"
+                >You Tube</a
+              >
+            </li>
+            <li><a href="#" class="hover:underline">Github</a></li>
           </ul>
         </div>
       </div>

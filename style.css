@@ -4,10 +4,12 @@
   --cyan-light: #80deea;
   --white: #f5fffa;
   --white-secondray: #e0f2f1;
+  --black: #1a1a1a;
 }
 
 body {
   scroll-behavior: smooth;
+  background-color: var(--white-secondray);
 }
 
 .company-name {
@@ -27,7 +29,7 @@ body {
   transition: all 0.3s ease;
   background-color: transparent;
   color: var(--white);
-  padding: 15px;
+  padding: 10px;
 }
 
 .navbar.scrolled {
@@ -137,6 +139,10 @@ body {
   background-color: var(--white);
 }
 
+.border-bg {
+  border: 1px solid var(--white);
+}
+
 .banner-image {
   width: 22rem;
   border-radius: 1rem;
@@ -153,6 +159,10 @@ body {
   }
 }
 
+header {
+  color: var(--white);
+}
+
 /* Custom button corner radius */
 .btn-rounded {
   border-radius: 12px;
@@ -161,4 +171,30 @@ body {
 .btn_subscribe {
   border-radius: 12px;
   background-color: var(--green-light);
+}
+
+footer {
+  background-color: var(--green-light);
+  color: var(--white);
+}
+
+.btn_learnmore:hover {
+  background-color: var(--white);
+}
+
+/* Download animation */
+.download-animation {
+  animation: downloadPulse 2s infinite;
+}
+
+@keyframes downloadPulse {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
