@@ -1,0 +1,164 @@
+:root {
+  --green-dark: #2f6d4f;
+  --green-light: #3c9d6d;
+  --cyan-light: #80deea;
+  --white: #f5fffa;
+  --white-secondray: #e0f2f1;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.company-name {
+  font-size: 1.5rem;
+}
+
+.gradient-bg {
+  background: linear-gradient(
+    to top,
+    var(--cyan-light) 0%,
+    var(--green-dark) 50%,
+    var(--green-light) 100%
+  );
+}
+
+.navbar {
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: var(--white);
+  padding: 15px;
+}
+
+.navbar.scrolled {
+  background: var(--white);
+  color: var(--green-dark);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled .company-name {
+  color: var(--green-light);
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+  color: var(--white);
+  font-size: 1.2rem;
+  margin: 0 1.2rem;
+}
+
+.nav-link:first-child {
+  margin-left: 0;
+}
+
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+.navbar.scrolled .nav-link {
+  color: var(--green-dark);
+}
+
+.navbar.scrolled .nav-link:hover {
+  color: var(--green-dark);
+}
+
+.nav-link.active {
+  color: var(--white);
+  font-weight: 600;
+  position: relative;
+}
+
+.navbar.scrolled .nav-link.active {
+  color: var(--green-dark);
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: var(--white);
+  border-radius: 1px;
+}
+
+.navbar.scrolled .nav-link.active::after {
+  background-color: var(--green-dark);
+}
+
+.mobile-nav-link {
+  color: var(--white);
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar.scrolled .mobile-nav-link {
+  color: var(--green-dark);
+}
+
+.mobile-nav-link.active {
+  background-color: var(--green-dark);
+  color: white;
+  font-weight: 600;
+}
+
+.navbar.scrolled .mobile-nav-link.active {
+  background-color: var(--green-light);
+  color: var(--white);
+}
+
+.navbar.scrolled .mobile-nav-link:hover {
+  background-color: var(--white-secondray);
+  color: var(--green-dark);
+}
+
+.hamburger-icon {
+  color: white;
+}
+
+.navbar.scrolled .hamburger-icon {
+  color: var(--green-light);
+}
+
+.mobile-menu {
+  background-color: var(--green-light);
+}
+
+.navbar.scrolled .mobile-menu {
+  background: transparent;
+  border-top: 1px solid var(--green-dark);
+}
+
+.card-bg {
+  background-color: var(--white);
+}
+
+.banner-image {
+  width: 22rem;
+  border-radius: 1rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Custom button corner radius */
+.btn-rounded {
+  border-radius: 12px;
+}
+
+.btn_subscribe {
+  border-radius: 12px;
+  background-color: var(--green-light);
+}
