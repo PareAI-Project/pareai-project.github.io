@@ -198,3 +198,7 @@ footer {
     transform: translateY(0px);
   }
 }
+
+.text-second {
+  color: var(--white-secondray);
+}
